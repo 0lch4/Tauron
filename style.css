@@ -1,0 +1,40 @@
+.badge{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 20px;
+    font-weight: 600;
+    margin: auto;
+    justify-content: center;
+}
+
+body > div.fixd > div.navbar.bg-base-200 > ul > li > a{
+    text-align: center;
+    display: inline-block;
+}
+
+.carousel,.timeline{
+    margin-bottom: 60px;
+}
+.timeline{
+    margin-top: 10px;
+}
+
+.hero{
+    padding-top:50px ;
+    padding-bottom:50px ;
+}
+body > div.fixd > div.skeleton{
+    padding-top: 15px;
+}
+
+.fixd{
+    position: fixed;
+    z-index: 999;
+}
+
+.fbg{
+    margin-top:150px
+}

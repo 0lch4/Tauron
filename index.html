@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function() {
+            $('a.scroll-link').on('click', function(event) {
+                event.preventDefault();
+                var target = $($(this).attr('href'));
+                var targetPosition = target.offset().top - 150;
+                $('html, body').animate({
+                    scrollTop: targetPosition
+                }, 500);
+            });
+        });
+
+        </script>
+        
+</head>
+<body>
+    <div class="fixd">
+    <div class="skeleton w-screen h-16 text-2xl font-semibold text-center border-dashed border-t-2 border-r-2 border-l-2 border-indigo-500">Moja prezentacja - Tauron rekrutacja </div>
+    <div class="navbar bg-base-200" >
+        <ul class="menu menu-horizontal w-full flex justify-between rounded-box border-b-4 border-t-4 border-indigo-200 border-b-indigo-500 border-t-indigo-500">
+            <li class="flex-1"><a class="block text-center scroll-link" href="#o-mnie">O mnie </a></li>
+            <li class="flex-1"><a class="block text-center scroll-link" href="#work-exp">Doświadczenia i aktywności zawodowe</a></li>
+            <li class="flex-1"><a class="block text-center scroll-link" href="#projects">Moje projekty</a></li>
+        </ul>
+    </div>
+</div>
+    <div class="badge badge-primary badge-lg fbg" id="o-mnie">O mnie</div>
+    <div class="hero bg-base-200">
+        <div class="hero-content flex-col lg:flex-row">
+          <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" class="max-w-sm rounded-lg shadow-2xl" />
+          <div>
+            <h1 class="text-5xl font-bold">Bartosz Olszewski</h1>
+            <p class="py-6">Od zawsze interesowała mnie informatyka. Przygodę z nią zacząłem już w gimnazjum - poszedłem do gimnazjum o profilu informatyczny. 
+                Już wtedy potrafiłem naprawić lub złożyć komputer i gdy ktoś miał jakiś problem z dziedziny informatyki zwracał się do mnie.
+                Następnie udałem się do technikum informatycznego oraz na studia informatyczne aby dalej się rozwijać w tym kierunku.
+                Jeśli chodzi o mocne strony, to jestem osobą cierpliwą, pracowitą oraz gotową na dalszą naukę. Szybko się uczę i potrafię dojść do rozwiązania problemu.
+                W przyszłości widzę siebie jako backend developera, który będzie stale się rozwijał aby posiadać aktualną wiedzę.
+                Oprócz informatyki moje zainteresowania to: bieganie, piłka nożna, gry komputerowe, gotowanie, oraz lubie spędzać czas na świeżym powietrzu.
+                </p>
+          </div>
+        </div>
+      </div>
+
+    <div class="badge badge-primary badge-lg" id="work-exp">Doświadczenia i aktywności zawodowe</div>
+
+    <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+        <li>
+          <div class="timeline-middle">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+          </div>
+          <div class="timeline-start md:text-end mb-10">
+            <time class="font-mono italic">2015</time>
+            <div class="text-lg font-black">Rozpoczęcie gimnazjum informatycznego.</div>
+            Ponieważ informatyka interesowała mnie od zawsze, postanowiłem, że wybiorę własnie gimnazjum informatyczne.
+            Nauczyłem się tam podstaw storn internetowych, podstaw o sprzęcie oraz podstaw sieci. Oprócz tego edukowałem
+            się samodzielnie z internetu, już wtedy jak komuś popsuł się komputer zwracał się do mnie. Potrafiłem już wtedy
+            złożyć cały komputer.
+          </div>
+          <hr/>
+        </li>
+        <li>
+          <hr />
+          <div class="timeline-middle">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+          </div>
+          <div class="timeline-end mb-10">
+            <time class="font-mono italic">2018</time>
+            <div class="text-lg font-black">Rozpoczęcie Technikum informatycznego.</div>
+            Po gimnazjum informatycznym analogicznie poszedłem do technikum informatycznego. Rozwinąłem tam swoje umiejętności
+            oraz zacząłem bardziej interesować się programowaniem. W trakcie technikum odbyłem dwie praktyki zawodowe. Pierwsze
+            odbyły się w firmie Selena FM S.A, zajmowałem się tam głównie drobnymi naprawami sprzętu, konfiguracjami sal konferencyjncyh.
+            Drugie praktyki odbyłem w starostwie powiatowym w Miliczu.
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div class="timeline-middle">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+          </div>
+          <div class="timeline-start md:text-end mb-10">
+            <time class="font-mono italic">2022</time>
+            <div class="text-lg font-black">Studia Informatyczne</div>
+            Po zakończeniu technikum odrazu zapisałem się na studia - oczywiście informatyczne. Tam zacząłem już głównie skupiać na programowaniu.
+            Wybór padł na Pythona. Założyłęm githuba i zacząłem dodawać tam swoje projekty. Poznawałem też inne narzędzie developerskie jak np. 
+            GIT, Docker, zainstalowałem linuxa na swoim komputerze.
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div class="timeline-middle">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+          </div>
+          <div class="timeline-end mb-10">
+            <time class="font-mono italic">2023</time>
+            <div class="text-lg font-black">Stworzenie Sklepu oraz strony internetowej</div>
+            Udało mi się wykonać pierwsze zlecenia zawodowe. Było to stworzenie sklepu w Wordpressie (swoją drogą uzyłem tam pythona do stworzenia
+            skryptu, który pomapował mi dane i przeniósł bazę z custom CMS w php 5.6 do wordpressa) oraz stworzenie strony.
+        </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div class="timeline-middle">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+          </div>
+          <div class="timeline-start md:text-end mb-10">
+            <time class="font-mono italic">2024</time>
+            <div class="text-lg font-black">Tworzenie systemu dla firmy</div>
+            Na ten moment kończę tworzyć system dla firmy kateringowej, który pomoże im składać zamówienia na towary w zależności
+            zapotrzebowania składników na dany dzień, a samo zapotrzebowanie wylicza na podstawie podanych mu potraw oraz liczby osób.
+            Ma on konta, grupy z różnymi uprawnieniami oraz możliwość pełnej edycji danych. Tworzony jest w django.
+          </div>
+        </li>
+      </ul>
+    <div class="badge badge-primary badge-lg" id="projects">Moje projekty</div>
+      <div class="carousel w-200">
+        <div id="slide1" class="carousel-item relative w-full">
+            <div class="absolute bottom-48 left-5 text-white bg-gray-800 bg-opacity-75 p-2 rounded">Sklep internetowy <a class="link link-info" href="https://olejemilo.pl/" target="_blank">Olejemilo.pl</a> </div>
+          <img src="img/olejemilo.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+            <div class="absolute bottom-48 left-5 text-white bg-gray-800 bg-opacity-75 p-2 rounded" >Strona internetowa <a class="link link-info" href="https://oleowita.pl/" target="_blank">Oleowita.pl</a> </div>
+          <img src="img/oleowita.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+            <div class="absolute bottom-48 left-5 text-white bg-gray-800 bg-opacity-75 p-2 rounded" >Aplikacja wyszukuje utwory o podobnym brzmieniu na podstawie danych takich jak poziom energii, nastrój itp. Aplikacja korzysta z prostej sieci neuronowej oraz API Spotify. Został zbudowany w oparciu o framework FastAPI. <a class="link link-info" href="https://github.com/0lch4/Application_for_music_recommendation" target="_blank">Można ją pobrać tutaj</a> </div>
+          <img src="img/music.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full">
+            <div class="absolute bottom-48 left-5 text-white bg-gray-800 bg-opacity-75 p-2 rounded" >Słownik internetowy wykorzystujący bazę danych MySQL oraz FastApi, który po wprowadzeniu Polskiego słowa wyszukuje jego odpowiednik w starszej mowie z Wiedźmina. <a class="link link-info" href="https://github.com/0lch4/Slownik_starszej_mowy" target="_blank">Można ją pobrać tutaj</a> </div>
+          <img src="img/wiedzmin.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide5" class="btn btn-circle">❯</a>
+          </div>
+          <div id="slide5" class="carousel-item relative w-full">
+            <div class="absolute bottom-48 left-5 text-white bg-gray-800 bg-opacity-75 p-2 rounded" > Jest to gra survival 2d napisana w pythonie. Klient to aplikacja desktopowa,która łączy się z serwerem. W ten sposób funkcjonuje ranking, dzięki któremu oprócz rozgrywki singleplayer istnieje również rywalizacja <a class="link link-info" href="https://github.com/0lch4/Dark_forest" target="_blank">Czysta gra</a> <a class="link link-info" href="https://github.com/0lch4/Dark_forest_client" target="_blank">Klient</a> <a class="link link-info" href="https://github.com/0lch4/Dark_forest_server" target="_blank">Serwer</a></div>
+
+            <img src="img/dark_forest.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide6" class="btn btn-circle">❯</a>
+            </div>
+            <div id="slide6" class="carousel-item relative w-full">
+            <div class="absolute bottom-48 left-5 text-white bg-gray-800 bg-opacity-75 p-2 rounded" >System pisany w django, który ma za zadanie pomóc w zamawianiu i zarządzaniu składnikami. </div>
+
+                <img src="img/rettman.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide5" class="btn btn-circle">❮</a> 
+                  <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      <footer class="footer footer-center p-4 bg-base-300 text-base-content border-t-4 border-indigo-200 border-t-indigo-500">
+        <aside>
+          <p>Copyright © 2024 - All right reserved by Bartosz Olszewki</p>
+        </aside>
+      </footer>
+</body>
+</html>
