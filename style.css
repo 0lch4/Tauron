@@ -38,3 +38,72 @@ body > div.fixd > div.skeleton{
 .fbg{
     margin-top:150px
 }
+
+.mobile{
+    display: none;
+}
+
+.ja{
+    max-width: 30%; 
+    width: 30%;
+}
+
+@media(max-width:762px){
+    body > div.fixd > div.skeleton{
+        display: none;
+    }
+    .carousel{
+        margin-top: 60px;
+    }
+
+    .badge{
+        text-align: center;
+        width: 100%;
+        font-size: 14px;
+        padding: 15px;
+        font-weight: 500;
+        margin: auto;
+        justify-content: center;
+    }
+    .timeline{
+        font-size: 12px;
+    }
+    .fixd{
+        display: none;
+    }
+    .mobile{
+        display: inline;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+    .fbg{
+        margin-top: 70px;
+    }
+    body > div.mobile > ul > li > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .carousel,.timeline{
+        margin-bottom: 20px;
+    }
+    body > div.hero.bg-base-200 > div > div > h1{
+        font-size: 24px;
+        text-align: center;
+    }
+    .py-6{
+        text-align: center;
+    }
+    .tx{
+       font-size: 12px;
+       margin-top:220px;
+       margin-left: -20px !important;
+        text-align: center;
+    }
+    .ja{
+        max-width: 100%; 
+        width: 100%;
+    }
+}
+
