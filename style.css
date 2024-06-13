@@ -48,6 +48,10 @@ body > div.fixd > div.skeleton{
     width: 30%;
 }
 
+.tx{
+    margin-top:40%;
+ }
+
 @media(max-width:762px){
     body > div.fixd > div.skeleton{
         display: none;
